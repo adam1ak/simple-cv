@@ -1,0 +1,7 @@
+section{
+    @apply  min-h-dvh 
+            text-lg font-medium antialiased;
+    @apply md:scroll-mt-16;
+    @apply sm:scroll-mt-[60px];
+    font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,6 @@
+.navbar a{
+    @apply hover:text-gray-200 focus:text-gray-200 active:text-gray-200;
+    @apply sm:text-xl uppercase;
+    @apply md:text-2xl;
+    font-family: "Kanit", sans-serif
+}
