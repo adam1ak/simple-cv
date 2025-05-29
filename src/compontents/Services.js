@@ -3,9 +3,13 @@ import '../styles/Services.css';
 
 
 function Service({service}) {
+  const imgLink = 'https://raw.githubusercontent.com/adam1ak/simple-cv/refs/heads/main/src/assets/svg/';
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <div
       className="
+        relative
         flex flex-col
         justify-end
         service
@@ -13,19 +17,38 @@ function Service({service}) {
         text-black
         w-96
         h-[30rem]
-        p-2">
+        p-2"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
+      <div
+        className={`
+          bg-overlap
+          bg-[#29225c]
+          absolute inset-0
+          origin-top
+          transition-transform duration-500 ease-out
+          ${isHovered ? 'scale-y-100' : 'scale-y-0'}`}/>
       <img
-        src={`../assets/svg/MenuHosting.svg`}
-        alt={`${service.svgName.normal}`}/>
-      <h1>{service.name}</h1>
-      <p>{service.description}</p>
+        src={imgLink + service.svgName.normal + '.svg'}
+        alt={`${service.svgName.normal}`}
+        className={`
+          relative
+          transition-transform duration-1000 ease-out
+          ${isHovered ? 'translate-x-10' : 'translate-x-0'}
+          ${isHovered ? '-translate-y-10' : '-translate-y-0'}
+          ${isHovered ? 'scale-150' : 'scale-100'}
+          z-10
+          max-w-20`}/>
+      <p className="text-pink font-bold uppercase z-10">{service.title}</p>
+      <p className={`${isHovered ? 'text-white' : 'text-purple'} font-bold uppercase mt-[-4px] mb-2 z-10`}>{service.subtitle}</p>
+      <p className="text-gray-600 text-sm">{service.shortDescription}</p>
     </div>
   )
 }
 
 function Services() {
   const [data, setData] = useState(null);
-  const jsonLink = "https://mocki.io/v1/91239c34-68bc-4ce0-9804-6d7ecf1675ad";
+  const jsonLink = "https://mocki.io/v1/ba834221-4f9a-4916-8fdd-b29c6d851cd4";
 
   useEffect(() => {
     fetch(jsonLink)
@@ -58,7 +81,9 @@ function Services() {
             services-container">
         {
           data && data.length > 0 ? (
-            <Service service={data[0]} />
+            data.map((serviceItem, index) => (
+              <Service id={index} service={serviceItem} />
+            ))
           ) : (
             <p>Loading data</p>
           )
