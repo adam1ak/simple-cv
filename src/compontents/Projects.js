@@ -19,7 +19,7 @@ const bgColorClasses = [
         hover:scale-105 hover:shadow-2xl
         project
         shadow-xl rounded-xl
-        w-full max-w-sm mx-auto`}>
+        w-full max-w-80 mx-auto`}>
       <div
         className={`
           bg-gradient-to-r ${bgColorClasses[project.id-1]}
@@ -68,7 +68,7 @@ const bgColorClasses = [
 
 function Projects() {
   const [data, setData] = useState(null);
-  const jsonLink = "https://mocki.io/v1/7dca7241-313a-471e-b27a-0c8064f0b2bc";
+  const jsonLink = "https://raw.githubusercontent.com/adam1ak/simple-cv/refs/heads/main/src/assets/json/ProjectData.json";
 
   useEffect(() => {
     fetch(jsonLink)
@@ -96,7 +96,7 @@ function Projects() {
         container mx-auto px-4 sm:px-6 lg:px-8">
       <div
         className="
-            xd 
+            text-black
             flex flex-col items-center
             mb-12">
         <h1 className="mb-1">My Projects</h1>

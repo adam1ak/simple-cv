@@ -78,7 +78,7 @@ function About() {
             group
             text-content
             mx-8 lg:mx-0
-            mb-28 lg:mb-0 p-6
+            mb-28 lgmb-0 p-6
             lg:max-w-xl
             2xl:max-w-3xl
             rounded-lg shadow-xl

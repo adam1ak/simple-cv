@@ -12,6 +12,7 @@ function Home() {
       <div className="
           flex
           flex-col items-center
+          mx-6
           sm:flex-row sm:items-stretch
           sm:gap-12 sm:mx-4
           lg:gap-20 xl:gap-28">

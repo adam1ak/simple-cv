@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "E-commerce Store",
+    "description": "A full-stack e-commerce application with user authentication, product listings, shopping cart, and secure checkout.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "imageText": "Shop Online",
+    "completionYear": 2023
+  },
+  {
+    "id": 2,
+    "name": "Task Management App",
+    "description": "A simple and intuitive task management application to help users organize their daily tasks and boost productivity.",
+    "technologies": [
+      "Vue.js",
+      "Firebase",
+      "Tailwind CSS"
+    ],
+    "imageText": "Manage Tasks",
+    "completionYear": 2022
+  },
+  {
+    "id": 3,
+    "name": "Weather Dashboard",
+    "description": "A responsive weather dashboard that fetches real-time weather data using a third-party API and displays it beautifully.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "OpenWeather API"
+    ],
+    "imageText": "Local Weather",
+    "completionYear": 2021
+  },
+  {
+    "id": 4,
+    "name": "Blog Platform",
+    "description": "A content management system for creating and managing blog posts, complete with a rich text editor and comment section.",
+    "technologies": [
+      "Next.js",
+      "GraphQL",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "imageText": "Write & Share",
+    "completionYear": 2023
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Website",
+    "description": "A personal portfolio website designed to showcase projects, skills, and contact information in a modern and clean interface.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "imageText": "My Portfolio",
+    "completionYear": 2024
+  },
+  {
+    "id": 6,
+    "name": "Recipe Finder",
+    "description": "An application that allows users to search for recipes based on ingredients and dietary preferences, pulling data from a recipe API.",
+    "technologies": [
+      "Angular",
+      "RxJS",
+      "Edamam API",
+      "Material UI"
+    ],
+    "imageText": "Find Recipes",
+    "completionYear": 2022
+  }
+]

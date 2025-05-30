@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="App flex flex-col min-h-screen text-gray-50 bg-neutral-100">
+    <div className="App flex flex-col min-h-screen text-gray-50 bg-white">
       <Header
         isShown={isHeaderShown}
         onToggleShow={toggleHeaderVisibility} />

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Mobile App Development",
+    "subtitle": "iOS & Android",
+    "svgName": {
+      "normal": "MenuMobile",
+      "active": "MenuMobileActive"
+    },
+    "shortDescription": "iOS & Android Native mobile APP development - Objective-C, Swift, Java, Kotlin"
+  },
+  {
+    "title": "Web Application",
+    "subtitle": "Development",
+    "svgName": {
+      "normal": "MenuWebDev",
+      "active": "MenuWebDevActive"
+    },
+    "shortDescription": "Full-stack web application development using modern frameworks and technologies."
+  },
+  {
+    "title": "Design",
+    "subtitle": "UI/UX",
+    "svgName": {
+      "normal": "MenuUIUX",
+      "active": "MenuUIUXActive"
+    },
+    "shortDescription": "Crafting intuitive and engaging user interfaces and experiences."
+  },
+  {
+    "title": "AI",
+    "subtitle": "Solutions",
+    "svgName": {
+      "normal": "MenuAI",
+      "active": "MenuAIActivePink"
+    },
+    "shortDescription": "Developing intelligent AI-powered solutions to automate and enhance your business."
+  },
+  {
+    "title": "Hosting",
+    "subtitle": "Services",
+    "svgName": {
+      "normal": "MenuHosting",
+      "active": "MenuHostingActive"
+    },
+    "shortDescription": "Reliable and scalable hosting solutions for your applications and websites."
+  },
+  {
+    "title": "Technology",
+    "subtitle": "Consulting",
+    "svgName": {
+      "normal": "MenuTech",
+      "active": "MenuTechActive"
+    },
+    "shortDescription": "Expert guidance and solutions for your technology challenges."
+  },
+  {
+    "title": "Video",
+    "subtitle": "Production",
+    "svgName": {
+      "normal": "MenuVideos",
+      "active": "MenuVideosActive"
+    },
+    "shortDescription": "Professional video creation and editing services for various needs."
+  }
+]
