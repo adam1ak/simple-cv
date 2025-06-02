@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Services.css';
+import '../styles/Styles.css';
 
 
 function Service({service}) {
@@ -10,6 +10,7 @@ function Service({service}) {
     <div
       className={`
         relative
+        cursor-pointer
         flex flex-col
         justify-end
         service
@@ -83,8 +84,8 @@ function Services() {
         className="
             mb-4
             uppercase font-bold
-            text-xl sm:text-2xl md:text-6xl
-            text-purple">learn more <br className="hidden md:block"/> about my <span className="text-pink"><br className="hidden md:block"/>services</span></h1>
+            text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl
+            text-purple">learn more <br className="hidden lg:block"/> about my <span className="text-pink"><br className="hidden lg:block"/>services</span></h1>
       <div
         className="
             grid

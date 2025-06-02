@@ -10,28 +10,9 @@ import Services from "./Services.js";
 
 function App() {
 
-  const [isHeaderShown, setisHeaderShown] = useState(false);
-
-  const toggleHeaderVisibility = () => {
-    setisHeaderShown(prevState => !prevState)
-  };
-
   return (
     <div className="App flex flex-col min-h-screen text-gray-50 bg-white">
-      <Header
-        isShown={isHeaderShown}
-        onToggleShow={toggleHeaderVisibility} />
-      <button
-        className={`
-          sm:hidden
-          bg-emerald-900
-          fixed 
-          right-5 bottom-5
-          min-h-12 min-w-12 rounded-2xl
-          ${isHeaderShown ? "hidden" : "flex"}
-          flex items-center justify-center`}
-        onClick={toggleHeaderVisibility}
-        ><Menu className="size-8 sm:hidden"/></button>
+      <Header/>
       <main className="flex-grow">
         <Home/>
         <About/>

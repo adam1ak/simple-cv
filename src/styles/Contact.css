@@ -1,0 +1,53 @@
+.contact{
+    @apply md:py-4 md:px-2 md:pr-8 md:max-w-xs md:rounded-xl md:border-2 md:border-transparent md:text-xl;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.contact:hover{
+    border: 2px solid #A91079;
+    background-color: rgba(169, 16, 121, 0.25)
+}
+
+.social{
+    @apply
+        text-2xl
+        md:text-3xl
+        cursor-pointer;
+
+}
+
+.category{
+    border: 2px solid #A91079; 
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category:hover{
+    background-color: #A91079;
+    color: white;
+}
+
+input{
+    @apply 
+        text-purple-950 
+        bg-transparent 
+        mb-5 md:mb-12
+        w-full
+        ;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a1a1aa;    
+}
+
+input:focus{
+    border-bottom: 2px solid #A91079;
+}
+
+.contact, .category, input{
+    transition: all 250ms ease-in-out;
+}

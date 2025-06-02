@@ -68,7 +68,7 @@ const bgColorClasses = [
 
 function Projects() {
   const [data, setData] = useState(null);
-  const jsonLink = "https://raw.githubusercontent.com/adam1ak/simple-cv/refs/heads/main/src/assets/json/ProjectData.json";
+  const jsonLink = "https://raw.githubusercontent.com/adam1ak/simple-cv/refs/heads/main/src/assets/json/ProjectsData.json";
 
   useEffect(() => {
     fetch(jsonLink)
